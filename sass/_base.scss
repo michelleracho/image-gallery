@@ -1,0 +1,40 @@
+// COLORS
+$color-gray-light: #d3cece;
+$color-gray-dark: #3d3c3c;
+
+$color-blue: #0543b7;
+
+// FONTS
+$font-default: 'Lato', sans-serif;
+$font-hightlight: 'Satisfy', cursive;
+
+// BREAKPOINTS
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px / 16px(browser default)
+}
+
+body {
+  // background-color: skyblue;
+  // max-width: 1200px;
+
+  font-size: 1.6rem;
+  font-family: $font-default;
+  color: $color-gray-dark;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr minmax(min-content, 120rem) 1fr;
+  grid-gap: 3rem;
+}
