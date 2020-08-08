@@ -4,6 +4,8 @@ $color-gray-dark: #3d3c3c;
 
 $color-blue: #0543b7;
 
+$color-offwhite: #f1eeee;
+
 // FONTS
 $font-default: 'Lato', sans-serif;
 $font-hightlight: 'Satisfy', cursive;
@@ -37,4 +39,6 @@ body {
   // grid-template-columns: repeat(3, 1fr);
   grid-template-columns: 1fr minmax(min-content, 120rem) 1fr;
   grid-gap: 3rem;
+
+  background-color: $color-offwhite;
 }

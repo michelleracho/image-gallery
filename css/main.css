@@ -26,6 +26,7 @@ body {
       grid-template-columns: 1fr minmax(-webkit-min-content, 120rem) 1fr;
       grid-template-columns: 1fr minmax(min-content, 120rem) 1fr;
   grid-gap: 3rem;
+  background-color: #f1eeee;
 }
 
 .icon {
@@ -53,7 +54,6 @@ body {
 }
 
 .header {
-  background-color: tan;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
@@ -67,9 +67,10 @@ body {
   display: grid;
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
-  -ms-grid-columns: 1fr min-content max-content 1fr;
-      grid-template-columns: 1fr -webkit-min-content -webkit-max-content 1fr;
-      grid-template-columns: 1fr min-content max-content 1fr;
+  -ms-grid-columns: 1fr min-content minmax(min-content, 45rem) 1fr;
+      grid-template-columns: 1fr -webkit-min-content minmax(-webkit-min-content, 45rem) 1fr;
+      grid-template-columns: 1fr min-content minmax(min-content, 45rem) 1fr;
+  grid-row-gap: 1.8rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -78,22 +79,22 @@ body {
 .user__photo {
   border-radius: 50%;
   width: 18rem;
-  margin: auto 5rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
   grid-row: 1 / -1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
   -ms-grid-column-align: center;
       justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
 .user__username {
-  background-color: skyblue;
-  font-weight: 400;
-  font-size: 2.3rem;
+  font-size: 3rem;
+  font-weight: 300;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
@@ -103,7 +104,6 @@ body {
 }
 
 .user__stats {
-  border: 2px solid slateblue;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
@@ -113,42 +113,40 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-transform: lowercase;
 }
 
 .user__stats > *:not(:last-child) {
   margin-right: 3rem;
 }
 
-.user__stats--posts {
-  background-color: yellow;
-}
-
-.user__stats--followers {
-  background-color: yellowgreen;
-}
-
-.user__stats--following {
-  background-color: green;
+.user__stats .count {
+  font-weight: 700;
 }
 
 .user__details {
-  border: 2px solid red;
   grid-row: 3 / -1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
 }
 
+.user__details > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .user__details--name {
-  background-color: thistle;
+  font-weight: 700;
 }
 
-.user__details--bio {
-  background-color: tomato;
+.user__details--website:link, .user__details--website:visited {
+  font-weight: 700;
+  text-decoration: none;
+  color: #0543b7;
 }
 
-.user__details--website {
-  background-color: violet;
+.user__details--website:active {
+  color: #d3cece;
 }
 
 .navbar {
