@@ -41,4 +41,18 @@ body {
   grid-gap: 3rem;
 
   background-color: $color-offwhite;
+
+  &::before,
+  &::after {
+    content: '';
+    border-bottom: 1px solid $color-gray-light;
+    background-color: #fff;
+  }
+
+  &::before {
+    margin-right: -3rem;
+  }
+  &::after {
+    margin-left: -3rem;
+  }
 }

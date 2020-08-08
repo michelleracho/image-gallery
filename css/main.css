@@ -29,6 +29,20 @@ body {
   background-color: #f1eeee;
 }
 
+.container::before, .container::after {
+  content: '';
+  border-bottom: 1px solid #d3cece;
+  background-color: #fff;
+}
+
+.container::before {
+  margin-right: -3rem;
+}
+
+.container::after {
+  margin-left: -3rem;
+}
+
 .icon {
   height: 2.5rem;
   width: 2.5rem;
