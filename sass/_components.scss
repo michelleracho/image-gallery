@@ -5,3 +5,13 @@
   width: 2.5rem;
   fill: $color-gray-dark;
 }
+
+.link {
+  text-decoration: none;
+  color: $color-blue;
+  font-weight: 700;
+
+  &:active {
+    color: $color-gray-light;
+  }
+}

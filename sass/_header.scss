@@ -91,13 +91,6 @@
 
       &:link,
       &:visited {
-        font-weight: 700;
-        text-decoration: none;
-        color: $color-blue;
-      }
-
-      &:active {
-        color: $color-gray-light;
       }
     }
   }

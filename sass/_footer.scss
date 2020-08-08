@@ -1,7 +1,36 @@
 // @import 'base';
 
 .footer {
-  background-color: lightcoral;
+  // background-color: lightcoral;
   grid-row: 4 / -1;
   grid-column: 2 / 3;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  text-transform: uppercase;
+
+  &__list {
+    // border: 2px solid skyblue;
+    list-style: none;
+
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 1.5rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.25rem;
+    }
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
 }
