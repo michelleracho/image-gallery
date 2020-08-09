@@ -11,6 +11,7 @@
   border-top: 1px solid $color-gray-light;
 }
 
+// -------------- GALLERY NAV BAR --------------
 .gallery-nav {
   font-size: 1.25rem;
 
@@ -34,12 +35,18 @@
       font-weight: 700;
       color: $color-gray-light;
       text-transform: uppercase;
+
+      &:active,
+      &:focus {
+        color: $color-gray-dark;
+        border-top: 1px solid currentColor;
+        margin-top: -1px;
+      }
     }
 
-    &:active,
-    &:focus {
-      color: $color-gray-dark;
-      border-top: 1px solid currentColor;
+    &--active {
+      color: $color-gray-dark !important;
+      border-top: 1px solid $color-gray-dark;
       margin-top: -1px;
     }
   }
@@ -52,6 +59,7 @@
   }
 }
 
+// -------------- GALLERY GRID --------------
 .gallery-grid {
   // & > * {
   //   display: grid;

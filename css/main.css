@@ -149,9 +149,15 @@ body {
   text-transform: uppercase;
 }
 
-.gallery-nav__link:active, .gallery-nav__link:focus {
+.gallery-nav__link:link:active, .gallery-nav__link:link:focus, .gallery-nav__link:visited:active, .gallery-nav__link:visited:focus {
   color: #3d3c3c;
   border-top: 1px solid currentColor;
+  margin-top: -1px;
+}
+
+.gallery-nav__link--active {
+  color: #3d3c3c !important;
+  border-top: 1px solid #3d3c3c;
   margin-top: -1px;
 }
 
