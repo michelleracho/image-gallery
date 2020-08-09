@@ -74,6 +74,7 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   text-transform: uppercase;
+  padding-bottom: 3rem;
 }
 
 .footer__list {
@@ -88,11 +89,11 @@ body {
 }
 
 .footer__link:link, .footer__link:visited {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 .footer .copyright {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 

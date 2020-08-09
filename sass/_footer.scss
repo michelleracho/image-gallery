@@ -10,6 +10,7 @@
   align-items: flex-end;
 
   text-transform: uppercase;
+  padding-bottom: 3rem;
 
   &__list {
     // border: 2px solid skyblue;
@@ -25,12 +26,12 @@
   &__link {
     &:link,
     &:visited {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
     }
   }
 
   .copyright {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
   }
 }
